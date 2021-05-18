@@ -13,8 +13,13 @@
     <header>
         <h1 class="page-title">Taskinator</h1>
         <p>Click a button below to add a new task!</p>
+        <form id="task-form">
+            <input type="text" name="task-name" placeholder="Enter task Name" />
+            <div class="form-group">
+                <button class="btn" id="save-task" type="submit">Add Task</button>
+            </div>
+        </form>
 
-        <button class="btn" id="save-task">Add Task</button>
     </header>
     <main class="page-content">
         <section class="task-list-wrapper">
