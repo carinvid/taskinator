@@ -1,11 +1,15 @@
-const buttonEl = document.querySelector(".btn");
+const formEl = document.querySelector("#task-form");
 const tasksToDoEl = document.querySelector("#tasks-to-do");
 
-buttonEl.addEventListener("click", function () {
-  var listItemEl = document.createElement("li");
+const createTaskHandler = function (event) {
+  event.preventDefault();
+  const taskNameInput = document.querySelector("input[name='task-name']");
+  console.dir(taskNameInput);
+
+  const listItemEl = document.createElement("li");
   listItemEl.className = "task-item";
   listItemEl.textContent = "This is a new task.";
   tasksToDoEl.appendChild(listItemEl);
-});
+};
 
-buttonEl.addEventListener("click", createTaskHandler);
+formEl.addEventListener("submit", createTaskHandler);
