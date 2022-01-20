@@ -3,8 +3,6 @@ const tasksToDoEl = document.querySelector("#tasks-to-do");
 
 const createTaskHandler = function (event) {
   event.preventDefault();
-  const taskNameInput = document.querySelector("input[name='task-name']");
-  console.dir(taskNameInput);
 
   const listItemEl = document.createElement("li");
   listItemEl.className = "task-item";
