@@ -27,4 +27,12 @@ var createTaskHandler = function (event) {
   tasksToDoEl.appendChild(listItemEl);
 };
 
+var createTaskEl = function (taskDataObj) {
+  // taskDataObj
+  {
+    name: "Task's name";
+    type: "Task's type";
+  }
+};
+
 formEl.addEventListener("submit", createTaskHandler);
